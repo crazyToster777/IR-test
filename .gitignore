@@ -1,0 +1,5 @@
+.idea
+.env
+output
+node_modules
+/tests/desktop/visual-test/screenshots/diff/

@@ -1,0 +1,54 @@
+{
+  "ts-node": {
+    "files": true,
+    "transpileOnly": true
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDirs": [
+      "."
+    ],
+    "module": "CommonJS",
+    "target": "ES2019",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "jsx": "preserve",
+    "skipDefaultLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types",
+    ],
+    "skipLibCheck": true,
+    "checkJs": false,
+    "noEmit": true,
+    "paths": {
+      "*": [
+        "./*",
+        "node_modules/*",
+      ],
+    }
+  },
+  "exclude": [
+    "**/node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts"
+  ]
+}

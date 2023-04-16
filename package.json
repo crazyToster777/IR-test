@@ -1,0 +1,48 @@
+{
+  "name": "@livexp/web-tests",
+  "version": "1.8.0",
+  "private": true,
+  "scripts": {
+    "test:api":                         "export CONFIG=api && codeceptjs run",
+    "test:local:acceptance-desktop":    "export CONFIG=acceptance-desktop && codeceptjs run --verbose",
+    "test:local:acceptance-mobile":     "export CONFIG=acceptance-mobile && codeceptjs run --verbose",
+    "test:visual-desktop":              "export CONFIG=visual-desktop && codeceptjs run --verbose"
+  },
+  "dependencies": {
+    "@codeceptjs/configure": "0.6.2",
+    "@codeceptjs/helper": "2.0.1",
+    "codeceptjs": "3.3.7",
+    "cookie": "0.4.1",
+    "dotenv": "10.0.0",
+    "jsdom": "17.0.0",
+    "lodash": "4.17.21",
+    "mochawesome": "7.1.3",
+    "module-alias": "2.2.2",
+    "nanoid": "3.3.2",
+    "pixelmatch": "5.3.0",
+    "pkg-config": "1.1.1",
+    "ts-node": "9.1.1",
+    "tsconfig-paths": "3.9.0"
+  },
+  "devDependencies": {
+    "@types/cookie": "0.4.1",
+    "@types/lodash": "4.14.169",
+    "@types/node": "18.11.11",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "axios": "1.0.0-alpha.1",
+    "eslint": "8.31.0",
+    "eslint-config-airbnb": "19.0.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-import-resolver-webpack": "0.13.2",
+    "eslint-plugin-codeceptjs": "1.3.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-import-helpers": "1.2.0",
+    "playwright": "1.27.1",
+    "prettier": "2.8.2",
+    "typescript": "4.7.4"
+  },
+  "_moduleAliases": {
+    "@shared": "../shared/"
+  }
+}
