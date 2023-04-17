@@ -6,7 +6,10 @@
     "test:api": "export CONFIG=api && codeceptjs run",
     "test:local:acceptance-desktop": "export CONFIG=acceptance-desktop && codeceptjs run --verbose",
     "test:local:acceptance-mobile": "export CONFIG=acceptance-mobile && codeceptjs run --verbose",
-    "test:visual-desktop": "export CONFIG=visual-desktop && codeceptjs run --verbose"
+    "test:visual-desktop": "export CONFIG=visual-desktop && codeceptjs run --verbose",
+
+    "test:all": " npm run test:local:acceptance-desktop && npm run test:local:acceptance-mobile && npm run test:visual-desktop && npm run test:api",
+    "report:allure": "allure serve ./output"
   },
   "dependencies": {
     "@codeceptjs/configure": "0.6.2",
