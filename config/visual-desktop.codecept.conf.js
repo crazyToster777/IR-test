@@ -5,7 +5,7 @@ const { templateConfig } = require('./template.codecept.conf');
 const config = merge(
   templateConfig,
   {
-    tests: '../web/tests/desktop/visual-test/test/*.test.ts',
+    tests: './tests/desktop/visual-test/test/*.test.ts',
     helpers: {
       Playwright: {
         url: process.env.BASE_URL,
@@ -24,9 +24,9 @@ const config = merge(
       },
 
       VisualHelper: {
-        dirExpected: '../web/tests/desktop/visual-test/screenshots/base/',
-        dirDiff: '../web/tests/desktop/visual-test/screenshots/output/',
-        dirActual: '../web/tests/desktop/visual-test/screenshots/output/',
+        dirExpected: './tests/desktop/visual-test/screenshots/base/',
+        dirDiff: './tests/desktop/visual-test/screenshots/output/',
+        dirActual: './tests/desktop/visual-test/screenshots/output/',
       },
     },
   }

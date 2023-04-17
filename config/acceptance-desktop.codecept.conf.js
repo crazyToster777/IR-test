@@ -5,7 +5,7 @@ const { templateConfig } = require('./template.codecept.conf');
 const config = merge(
   templateConfig,
   {
-    tests: '../web/tests/desktop/acceptance-test/*.test.ts',
+    tests: './tests/desktop/acceptance-test/*.test.ts',
     helpers: {
       Playwright: {
         url: process.env.BASE_URL,

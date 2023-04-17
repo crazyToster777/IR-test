@@ -3,14 +3,15 @@
   "version": "1.8.0",
   "private": true,
   "scripts": {
-    "test:api":                         "export CONFIG=api && codeceptjs run",
-    "test:local:acceptance-desktop":    "export CONFIG=acceptance-desktop && codeceptjs run --verbose",
-    "test:local:acceptance-mobile":     "export CONFIG=acceptance-mobile && codeceptjs run --verbose",
-    "test:visual-desktop":              "export CONFIG=visual-desktop && codeceptjs run --verbose"
+    "test:api": "export CONFIG=api && codeceptjs run",
+    "test:local:acceptance-desktop": "export CONFIG=acceptance-desktop && codeceptjs run --verbose",
+    "test:local:acceptance-mobile": "export CONFIG=acceptance-mobile && codeceptjs run --verbose",
+    "test:visual-desktop": "export CONFIG=visual-desktop && codeceptjs run --verbose"
   },
   "dependencies": {
     "@codeceptjs/configure": "0.6.2",
     "@codeceptjs/helper": "2.0.1",
+    "@faker-js/faker": "^7.6.0",
     "codeceptjs": "3.3.7",
     "cookie": "0.4.1",
     "dotenv": "10.0.0",

@@ -9,10 +9,10 @@ const mainPage = {
     nextSignUpBtn: 'button[class*=--primary]',
   },
 
-  async fillSignUpForm() {
-    await I.fillField(this._signUpForm.usernameField, 'username');
-    await I.fillField(this._signUpForm.emailField, 'email@email.dev');
-    await I.fillField(this._signUpForm.passwordField, 'password');
+  async fillSignUpForm(username: string, email: string, password: string) {
+    await I.fillField(this._signUpForm.usernameField, username);
+    await I.fillField(this._signUpForm.emailField, email);
+    await I.fillField(this._signUpForm.passwordField, password);
   },
 
   async clickNextBtn() {

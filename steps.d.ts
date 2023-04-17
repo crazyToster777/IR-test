@@ -2,13 +2,12 @@
 type stepsFile = typeof import('./stepsFile');
 type page = typeof import('./pages/all')
 type assertHelper = import('./helpers/assertHelper');
-
+type factory = import('./factory/index');
 
 /* eslint-disable no-unused-vars */
 declare namespace CodeceptJS {
 
-  interface Methods extends  visualHelper, assertHelper, PlaywrightTs {}
-
+  interface Methods extends visualHelper, assertHelper, PlaywrightTs {}
   interface I extends ReturnType<stepsFile>,
     WithTranslation<visualHelper>, WithTranslation<Methods>, WithTranslation<assertHelper> {}
 
@@ -18,6 +17,7 @@ declare namespace CodeceptJS {
 
   interface SupportObject {
     I: I,
+    factory: factory,
     current: any,
     page: page,
   }

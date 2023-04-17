@@ -2,10 +2,11 @@ const pages = require('../pages');
 
 const templateConfig = {
   name: 'tests',
-  output: '../web/output',
+  output: './output',
   fullPromiseBased: true,
   include: {
     I: './stepsFile.ts',
+    factory: './factory/index.ts',
     ...pages.default,
 
   },
@@ -23,7 +24,7 @@ const templateConfig = {
   },
   helpers: {
     AssertHelper: {
-      require: '../web/helpers/assertHelper.ts',
+      require: './helpers/assertHelper.ts',
     },
     REST: {
       endpoint: 'https://api.independentreserve.com',
@@ -31,11 +32,11 @@ const templateConfig = {
     },
     JSONResponse: {},
     VisualHelper: {
-      require: '../web/helpers/visualHelper.ts',
+      require: './helpers/visualHelper.ts',
 
-      dirExpected: '../web/tests/output/',
-      dirDiff: '../web/tests/output/',
-      dirActual: '../web/tests/output/',
+      dirExpected: './tests/output/',
+      dirDiff: './tests/output/',
+      dirActual: './tests/output/',
 
       captureActual: true,
       captureExpected: false,

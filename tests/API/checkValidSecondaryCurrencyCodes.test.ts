@@ -1,6 +1,6 @@
-import { TAGS } from 'types';
+import { RETRY_COUNT, TAGS } from 'types';
 
-Feature('API');
+Feature('API').retry(RETRY_COUNT);
 
 Scenario('Check valid secondary currency codes', async ({ I }) => {
   I.sendGetRequest('/Public/GetValidSecondaryCurrencyCodes');

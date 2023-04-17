@@ -1,3 +1,5 @@
+export const RETRY_COUNT = 1;
+
 export const TAGS = {
   UI: 'UI',
   API: 'API',

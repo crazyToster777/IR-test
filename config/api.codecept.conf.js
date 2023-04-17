@@ -5,7 +5,7 @@ const { templateConfig } = require('./template.codecept.conf');
 const config = merge(
   templateConfig,
   {
-    tests: '../web/tests/API/*.test.ts',
+    tests: './tests/API/*.test.ts',
     plugins: {
       retryFailedStep: {
         enabled: false,

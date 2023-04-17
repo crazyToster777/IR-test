@@ -1,6 +1,6 @@
-import { TAGS } from 'types';
+import { TAGS, RETRY_COUNT } from 'types';
 
-Feature('Mobile');
+Feature('Mobile').retry(RETRY_COUNT);
 
 Scenario('Check redirect to app for mobile device ', async ({ I, page }) => {
   await I.amOnPage(page.main.URL);
